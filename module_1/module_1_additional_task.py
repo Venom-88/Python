@@ -13,16 +13,10 @@ students = {
 
 students_list = list(students)
 students_list.sort()
-print(students_list)
 average_grades = {}
 for i in range(len(students_list)):
     student = students_list[i]
     grades_list = grades[i]
     average = sum(grades_list)/len(grades_list)
     average_grades[student] = average
-student = input("Введите имя ученика: ")
 print(average_grades)
-if student in average_grades:
-    print(f"Средний балл {student}: {average_grades[student]:.2f}")
-else:
-    print("Ученик не найден")
